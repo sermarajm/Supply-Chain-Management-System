@@ -9,6 +9,9 @@ Maintain Inventory across multiple Warehouses
 Monitor and query Shipments with status and delivery info
 Handle Orders per warehouse with product-level details
 Includes 20+ SQL queries for analysis, optimization, and reporting
+
+
+
 🛠️ Technologies Used
 Database: MySQL
 File: project_supply_chain_management_system.sql
@@ -19,6 +22,10 @@ Products(ProductID, ProductName, Description, UnitPrice, SupplierID)
 Inventory(InventoryID, ProductID, WarehouseID, Quantity)
 Shipments(ShipmentID, SupplierID, WarehouseID, ShipmentDate, ArrivalDate, Status)
 Orders(OrderID, ProductID, WarehouseID, Quantity, OrderDate, Status)
+
+
+
+
 📦 How to Use
 Import the database:
 
@@ -26,10 +33,15 @@ Open your MySQL client (e.g., phpMyAdmin or MySQL Workbench)
 Create the database:
 CREATE DATABASE Supply_Chain_Management_System;
 Import the file: project_supply_chain_management_system.sql
+
+
 Explore the schema:
 
 Use SHOW TABLES; to see available tables
 Run included queries to analyze inventory, orders, and more
+
+
+
 🧠 Sample Analytical Queries
 Top 5 most ordered products
 Inventory value per product (price × quantity)
@@ -38,6 +50,10 @@ Cancelled or pending orders
 Warehouses with the most shipment activity
 Products that were never ordered
 These are pre-written and available at the end of the .sql file under comments.
+
+
+
+
 
 📝 License
 This project is open-source and intended for academic, training, and demonstration purposes. Contributions are welcome!
